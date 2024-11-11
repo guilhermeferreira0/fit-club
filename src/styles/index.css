@@ -21,4 +21,9 @@ body {
   body {
     @apply bg-lightBlack
   }
+
+  #text-transparent {
+    -webkit-text-stroke: 1px snow;
+  }
 }
+
