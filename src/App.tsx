@@ -5,7 +5,9 @@ export default function App() {
   return (
     <>
       <Header />
-      <h1 className="">TESTANDO</h1>
+      <main>
+        <h1 className="">TESTANDO</h1>
+      </main>
     </>
   )
 }
