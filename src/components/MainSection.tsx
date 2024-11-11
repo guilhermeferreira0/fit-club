@@ -2,7 +2,7 @@ import OrangeButton from "./OrangeButton";
 
 export default function MainSection() {
   return (
-    <section className="flex flex-col md:flex-row">
+    <section className="flex flex-col md:flex-row" id="home">
       <div className="flex flex-col gap-5 justify-center items-start">
         <h4 
           className="text-lightSalmon uppercase font-semibold text-sm"
@@ -28,7 +28,7 @@ export default function MainSection() {
           alt="Body Strong image" 
           className="w-80 m-auto"
         />
-        <span className="uppercase absolute -bottom-10 text-[6em] -z-10 text-black font-extrabold md:-left-1/3">Fitness</span>
+        <span className="uppercase absolute -bottom-10 text-[9em] -z-10 text-black font-extrabold md:right-[56%]">Fitness</span>
       </div>
 
     </section>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 import NavLink from "./NavLink";
-import OrangeButton from "./OrangeButton";
+import OrangeButton from "../OrangeButton";
 
 const links = ['home', 'program', 'service', 'about', 'community'];
 
@@ -9,7 +9,7 @@ export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   
   return (
-    <header className='w-full flex items-center py-6'>
+    <header className='w-full flex items-center py-6 px-4 lg:px-60'>
       <img 
         src="./images/logo.png" 
         alt="FitClub Logo" 

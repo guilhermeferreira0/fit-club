@@ -3,8 +3,8 @@ import ExploreCard from "./ExploreCard";
 
 export default function ExploreProgram() {
   return (
-    <section className="flex flex-col gap-12">
-      <div className="flex w-full justify-between">
+    <section className="flex flex-col gap-12 w-[97.6%]" id="program">
+      <div className="flex justify-between">
         <h3 className="font-bold text-snow uppercase text-xl">
           Explore our program
         </h3>

@@ -12,7 +12,7 @@ export default function NavLink({children, href}: NavLinkProps) {
       className="text-snow flex items-center capitalize text-sm lg:text-md cursor-pointer"
     >
       <a 
-        href={href}
+        href={`/#${href}`}
         className="hover:border-b-2"
       >
         {children}

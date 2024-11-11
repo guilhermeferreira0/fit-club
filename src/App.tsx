@@ -1,16 +1,26 @@
+import Atmosphere from "./components/Atmosphere";
+import BookClass from "./components/BookClass";
 import ExploreProgram from "./components/ExploreProgram";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainSection from "./components/MainSection";
+import MemberReview from "./components/MemberReview";
+import PricingPlan from "./components/PricingPlan";
 
 export default function App() {
 
   return (
     <>
       <Header />
-      <main className="px-6 lg:px-10 flex flex-col gap-24 mt-24">
+      <main className="px-8 lg:px-60 flex flex-col gap-36">
         <MainSection />
         <ExploreProgram />
+        <BookClass />
+        <Atmosphere />
+        <PricingPlan />
+        <MemberReview />
       </main>
+      <Footer />
     </>
   )
 }
