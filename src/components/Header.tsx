@@ -16,7 +16,7 @@ export default function Header() {
         className="w-50"
       />
 
-      <nav className="w-full flex items-end relative">
+      <nav className="w-full flex items-end relative z-50">
         <div className={`md:opacity-0 md:touch-none md:cursor-default h-24 flex items-center cursor-pointer absolute -top-10 right-10 z-30 ${menuIsOpen ? 'max-md:fixed top-2' : ''}`}
         onClick={() => setMenuIsOpen(prev => !prev)}>
           {menuIsOpen ?  

@@ -26,7 +26,7 @@ export default function MainSection() {
         <img 
           src="./images/header.png" 
           alt="Body Strong image" 
-          className="w-80 z-10 m-auto"
+          className="w-80 m-auto"
         />
         <span className="uppercase absolute -bottom-10 text-[6em] -z-10 text-black font-extrabold md:-left-1/3">Fitness</span>
       </div>
