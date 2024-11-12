@@ -22,10 +22,12 @@ export default function Header() {
           {menuIsOpen ?  
             <MdClose 
               size={24}
+              color="snow"
             />
             :
             <MdMenu 
               size={24}
+              color="snow"
             />
           }
         </div>

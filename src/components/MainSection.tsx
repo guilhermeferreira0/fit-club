@@ -42,7 +42,11 @@ export default function MainSection() {
           alt="Body Strong image" 
           className="w-80 m-auto"
         />
-        <span className="uppercase absolute -bottom-10 text-[9em] -z-10 text-black font-extrabold md:right-[56%]">Fitness</span>
+        <span 
+          className="uppercase absolute -bottom-10 text-[6.7em] lg:text-[9em] -z-10 text-black font-extrabold md:right-[56%]"
+        >
+          Fitness
+        </span>
       </motion.div>
 
     </section>
