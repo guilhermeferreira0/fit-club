@@ -7,7 +7,7 @@ Este projeto foi desenvolvido como parte de um desafio para uma vaga de Desenvol
 - **React**: Biblioteca JavaScript para construir interfaces de usuário.
 - **TypeScript**: Superset do JavaScript, adicionando tipagem estática ao código.
 - **Framer Motion**: Biblioteca para animações em React, criando transições e interações fluídas.
-- **Tailwind**: Para estilos locais, garantindo que o escopo dos estilos se restrinja ao componente.
+- **Tailwind**: Dá mais velocidade ao criar estilos, além de facilitar a estilização por meio da classe.
 
 ## Como Rodar o Projeto Localmente
 
@@ -22,7 +22,7 @@ Este projeto foi desenvolvido como parte de um desafio para uma vaga de Desenvol
 ``
 
 ### Utilizando docker
-* Buildando Imagem
+* Buildando a Imagem
 ``
   docker build -t fit-club .
 ``
