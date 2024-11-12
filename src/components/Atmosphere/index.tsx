@@ -1,4 +1,5 @@
 import AtmosphereCard from "./AtmosphereCard";
+import { motion } from 'framer-motion';
 
 export default function Atmosphere() {
   return (
@@ -12,7 +13,12 @@ export default function Atmosphere() {
           alt="Atmosphere image" 
           className="w-full h-2/4 -z-50"
         />
-        <div className="md:absolute -bottom-[15%] rounded-lg bg-black flex flex-col md:flex-row items-center justify-center md:w-[90%] p-5 gap-4 mt-5 md:mt-0">
+        <motion.div 
+          className="md:absolute -bottom-[15%] rounded-lg bg-black flex flex-col md:flex-row items-center justify-center md:w-[90%] p-5 gap-4 mt-5 md:mt-0"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
           <AtmosphereCard 
             icon="./images/icons/icon-person.png"
             title="Personal Trainer"
@@ -28,7 +34,7 @@ export default function Atmosphere() {
             title="Good Management"
             text="Supportive management, for yout fitness success"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

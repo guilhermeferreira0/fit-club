@@ -1,9 +1,16 @@
 import OrangeButton from "./OrangeButton";
+import { motion } from 'framer-motion';
 
 export default function MainSection() {
   return (
     <section className="flex flex-col md:flex-row" id="home">
-      <div className="flex flex-col gap-5 justify-center items-start">
+      <motion.div 
+        className="flex flex-col gap-5 justify-center items-start"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+      >
         <h4 
           className="text-lightSalmon uppercase font-semibold text-sm"
         >
@@ -20,16 +27,23 @@ export default function MainSection() {
         <OrangeButton>
           Get Started
         </OrangeButton>
-      </div>
+      </motion.div>
 
-      <div className="relative w-full">
+
+      <motion.div 
+        className="relative w-full"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+      >
         <img 
           src="./images/header.png" 
           alt="Body Strong image" 
           className="w-80 m-auto"
         />
         <span className="uppercase absolute -bottom-10 text-[9em] -z-10 text-black font-extrabold md:right-[56%]">Fitness</span>
-      </div>
+      </motion.div>
 
     </section>
   );

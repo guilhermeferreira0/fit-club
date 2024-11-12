@@ -1,8 +1,14 @@
 import OrangeButton from "./OrangeButton";
+import { motion } from 'framer-motion';
 
 export default function BookClass() {
   return (
-    <section className="flex flex-col md:flex-row gap-5" id="about">
+    <motion.section 
+      className="flex flex-col md:flex-row gap-5" id="about"
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 0.7 }}  
+    >
       <div className="relative w-[80%] md:w-2/4 flex justify-center items-center md:items-end md:justify-end">
         <img 
           src="./images/class-1.jpg" 
@@ -23,6 +29,6 @@ export default function BookClass() {
           Book a Class
         </OrangeButton>
       </div>
-    </section>
+    </motion.section>
   );
 }
