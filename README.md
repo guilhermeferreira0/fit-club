@@ -9,6 +9,14 @@ Este projeto foi desenvolvido como parte de um desafio para uma vaga de Desenvol
 - **Framer Motion**: Biblioteca para animações em React, criando transições e interações fluídas.
 - **Tailwind**: Dá mais velocidade ao criar estilos, além de facilitar a estilização por meio da classe.
 
+## Diferenciais do Projeto
+
+- Slideshow
+- Animações
+- Reponsividade 
+- Menu Interativo
+- Disponibilidade na web
+
 ## Como Rodar o Projeto Localmente
 
 ### Usando npm
