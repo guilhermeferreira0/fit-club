@@ -10,7 +10,7 @@ export default function PricingCard({ title, value, benefits }: PricingCardProsp
   const formatedValue = value.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0 });
   
   return (
-    <section className="flex flex-col p-7 bg-black rounded-md shadow-lg shadow-slate-700 h-[70vh] justify-between border-2 border-transparent hover:border-lightSalmon">
+    <section className="flex flex-col p-7 bg-black rounded-md shadow-lg shadow-slate-700 h-[70vh] justify-between border-2 border-transparent hover:border-lightSalmon hover:scale-105 transition-all">
       <div className="flex flex-col gap-7">
         <h4 className="font-bold text-snow capitalize">{title}</h4>
         <p>

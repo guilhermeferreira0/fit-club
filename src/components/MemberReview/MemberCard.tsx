@@ -17,7 +17,7 @@ export default function MemberCard({ profileJob, profileImage, profileName, star
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
     >
-      <p className="text-snow text-justify lg:w-[70%]">{text}</p>
+      <p className="text-snow text-justify w-[100%] lg:w-[70%]">{text}</p>
       <div className="flex gap-1">
         {Array.from({length: stars}).map((_, index) => (
           <IoStarSharp 
@@ -30,11 +30,11 @@ export default function MemberCard({ profileJob, profileImage, profileName, star
         <img 
           src={profileImage} 
           alt="Image Profile Member" 
-          className="w-16 rounded-full"
+          className="w-8 h-8 sm:h-16 sm:w-16 rounded-full"
         />
         <div className="ml-5">
-          <h6 className="text-snow font-semibold text-lg">{profileName}</h6>
-          <p className="text-lightGray font-light">{profileJob}</p>
+          <h6 className="text-snow font-semibold text-sm sm:text-lg">{profileName}</h6>
+          <p className="text-lightGray font-light text-sm sm:text-base">{profileJob}</p>
         </div>
       </div>
     </motion.div>

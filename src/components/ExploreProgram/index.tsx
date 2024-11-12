@@ -9,14 +9,19 @@ const programs = [
     title: "Strength"
   },
   {
-    img: "./images/icons/icon-boxe.png",
-    text: "Embrace the essence of strength as we delve into its various dimensions physical, mental, and emotional.",
-    title: "Strength"
+    img: "./images/icons/icon-healthy.png",
+    text: "It encompasses a range of activities that improve health, strength, flexibility, and overall well-being.",
+    title: "Physical Fitness"
   },
   {
-    img: "./images/icons/icon-boxe.png",
-    text: "Embrace the essence of strength as we delve into its various dimensions physical, mental, and emotional.",
-    title: "Strength"
+    img: "./images/icons/icon-walk.png",
+    text: "Through a combination of workout routines and expert guidance, wel`ll empower you to reach your goals.",
+    title: "Fat Lose"
+  },
+  {
+    img: "./images/icons/icon-sacola.png",
+    text: "Designed for individuals, our program offers an effective approach to gaining weight in a sustainable manner.",
+    title: "Weight Gain"
   },
 ];
 
@@ -28,22 +33,20 @@ export default function ExploreProgram() {
           Explore our program
         </h3>
         <div className="flex gap-5">
-          <button className="border-2 rounded-2xl p-1 w-7 flex items-center justify-center hover:border-lightSalmon">
+          <button className="border-2 rounded-2xl p-1 w-7 flex items-center justify-center text-snow hover:text-lightSalmon hover:border-lightSalmon">
             <FaArrowLeft 
               size={12}
-              color="white"
             />
           </button>
-          <button className="border-2 rounded-2xl p-1 w-7 flex items-center justify-center hover:border-lightSalmon">
+          <button className="border-2 rounded-2xl p-1 w-7 flex items-center justify-center text-snow hover:text-lightSalmon hover:border-lightSalmon">
             <FaArrowRight 
               size={12}
-              color="white"
             />
           </button>
         </div>
       </div>
       <div 
-         className="w-full grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-8"
+         className="w-full grid grid-cols-[repeat(auto-fit,minmax(232px,1fr))] gap-7"
       >
         {programs.map((program, index) => (
           <motion.div

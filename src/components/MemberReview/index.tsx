@@ -51,10 +51,11 @@ export default function MemberReview() {
   }
 
   return (
-    <section className="flex flex-col md:flex-row px-80 py-20 gap-7 -mx-64 bg-black lg:px-60" id="community">
+    <section className="flex bg-black px-8 py-16 lg:px-60 -mx-8 lg:-mx-60" id="community">
       <RiDoubleQuotesR 
         color="orange"
         size={180}
+        className="mr-7"
       />
       <div className="flex flex-col gap-8">
         <h2 className="uppercase text-snow text-xl text-start font-semibold">Member review</h2>

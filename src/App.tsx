@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <main className="px-8 lg:px-60 flex flex-col gap-36">
+      <main className="px-8 lg:px-60 flex flex-col gap-36 overflow-x-hidden">
         <MainSection />
         <ExploreProgram />
         <BookClass />

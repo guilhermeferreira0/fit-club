@@ -8,7 +8,7 @@ interface ExploreCardProps {
 
 export default function ExploreCard({ img, text, title }: ExploreCardProps) {
   return (
-    <section className="bg-black flex flex-col gap-3 items-start border-2 border-transparent rounded-md p-4 hover:border-2 hover:border-lightSalmon">
+    <section className="bg-black shadow-slate-900 shadow-lg flex flex-col gap-3 items-start border-2 border-transparent rounded-md p-4 hover:border-2 hover:border-lightSalmon hover:scale-105 transition-all">
       <img 
         src={img} 
         alt="" 
@@ -23,7 +23,6 @@ export default function ExploreCard({ img, text, title }: ExploreCardProps) {
         Join Now 
         <FaArrowRight 
           size={12}
-          color="white"
         />
       </button>
     </section>
